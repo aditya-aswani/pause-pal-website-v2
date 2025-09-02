@@ -370,33 +370,15 @@ body {
 
 .steps-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
 }
 
-/* Medium screens: 2 cards in first row, 3 in second */
+/* Medium screens: 2 cards per row */
 @media (max-width: 1200px) and (min-width: 769px) {
     .steps-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-    
-    .step-card:nth-child(1),
-    .step-card:nth-child(2) {
-        grid-column: span 1;
-    }
-    
-    .step-card:nth-child(1) {
-        grid-column: 1 / 2;
-    }
-    
-    .step-card:nth-child(2) {
-        grid-column: 3 / 4;
-    }
-    
-    .step-card:nth-child(3),
-    .step-card:nth-child(4),
-    .step-card:nth-child(5) {
-        grid-column: span 1;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
     }
 }
 
