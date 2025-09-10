@@ -304,6 +304,27 @@ body {
     box-shadow: var(--shadow-xl);
 }
 
+.btn-secondary {
+    background: white;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    border-radius: 50px;
+    font-size: 0.95rem;
+    padding: 0.875rem 1.75rem;
+    margin-top: 1.25rem;
+    font-weight: 600;
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.15);
+    text-decoration: none;
+}
+
+.btn-secondary:hover {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary-dark);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(99, 102, 241, 0.25);
+}
+
 .btn-icon {
     transition: transform 0.3s;
 }
